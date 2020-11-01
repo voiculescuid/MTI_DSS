@@ -1,187 +1,378 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>TimePlanner</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	<head>
+		<title>TimePlanner - Fiki</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">			
+		<link rel="stylesheet" href="static/css/style.css">
+		<link rel="stylesheet" href="static/css/timeline.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/team.css">
+		<link rel="icon" href="static/img/logo.png">
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  
-</head>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<body>
-  <script src="https://use.typekit.net/bkt6ydm.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-<header class="example-header">
-    <h1 class="text-center">TIMEPLANNER</h1>
-    <p>Managing your time the Right Way</p>
-</header>
-<div class="container-fluid">
-    <div class="row example-centered">
-        <div class="col-md-12 example-title">
-            <p>Wasting time in meetings is an important factor for most companies.In the last 20 years, the number of meetings has almost doubled, 67% of workers say spending too much time in meetings distracts them from doing their job. The cost of poorly organised meetings is $399 billion in the US in 2019 alone.</p>
-        </div>
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-            <ul class="timeline timeline-centered">
-				<li class="timeline-item period">
-                    <div class="timeline-info"></div>
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h2 class="timeline-title">October 2020</h2>
-                    </div>
-                </li>
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Project Description</h3>
-                        <p>	TimePlanner is an application that manages meetings more efficiently.  
-							The application will be able to check if the respective meeting is needed and setting the level of need and if the persons involved are suitable for the meeting, using artificial intelligence based on the history of existing meetings. It will have a list of points to discuss for the respective meeting and the time allocated to each point, at the end there will be a feedback from the participants for the respective meeting which will be taken into account at the next meetings.</p>
-                    </div>
-                </li>
-				
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Problem</h3>
-                        <p>	Wasting time in meetings is an important factor for most companies.In the last 20 years, the number of meetings has almost doubled, 67% of workers say spending too much time in meetings distracts them from doing their job. The cost of poorly organised meetings is $399 billion in the US in 2019 alone. </p>
-                    </div>
-                </li>
-				
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Solution </h3>
-                        <p>	TimePlanner is an application that manages meetings more efficiently.
-						The application will be able to check if the respective meeting is needed and setting the level of need and if the persons involved are suitable for the meeting, using artificial intelligence based on the history of existing meetings. It will have a list of points to discuss for the respective meeting and the time allocated to each point, at the end there will be a feedback from the participants for the respective meeting which will be taken into account at the next meetings. </p>
-                    </div>
-                </li>
-				
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Customer segment</h3>
-                        <p>The application is addressed to teams that want to organize their meetings more efficiently. </p>
-                    </div>
-                </li>
-				
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Competition</h3>
-                        <p>Meetingbird</p>
-                        <p>Calendar </p>
-                        <p>Calendly </p>
-                        <p>Doodle </p>
-                        <p>Rallly </p>
-                        <p>x.ai </p>
-                        <p>Woven </p>
-                        <p>Google Calendar</p>
-                    </div>
-                </li>
-				
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Customer segment</h3>
-                        <p>The application is addressed to teams that want to organize their meetings more efficiently. </p>
-                    </div>
-                </li>
-				
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Advantage over the competition </h3>
-                        <p>cross platform application</p>
-                        <p>the possibility of providing feedback at the end of meetings</p>
-                        <p>offering an easy to use and friendly interface</p>
-                        <p>the use of artificial intelligence to analyze and improve the meeting</p>
-                    </div>
-                </li>
-				
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Key metrics </h3>
-                        <p>Number of new users, number of downloads for mobile users. </p>
-                        <p>Number of active user - daily active users(DAU), weakly active users(WAU), monthly active users(MAU). </p>
-                        <p>Rating from user, user feadback. </p>
-                    </div>
-                </li>
-				
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Cost structure</h3>
-                        <p>Production costs: </p>
-                        <p>Developers </p>
-                        <p>Testers </p>
-                        <p>Designer </p>
-                        <p>Software engineers </p>
-                        <p>Internet subscription, Utilities, Rent </p>
-                        <p>Taxes and dues </p>
-						<br>
-                        <p>Unproductive costs: </p>
-                        <p>Marketing and sales costs </p>
-                        <p>Administrative costs </p>
-						<br>
-                        <p>Non-periodic costs: </p>
-                        <p>Hardware </p>
-                        <p>Furniture </p>
-                        <p>Software licenses </p>
-                    </div>
-                </li>
-				
-				<li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Revenue streams</h3>
-                        <p>Free – for 3 months of full versions, after this period the basic features and the existence of some ads.</p>
-                        <p>Subscription fees - monthly fees, monthly recurring revenue (MRR), full versions and no-ads.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-  
- <footer>
- 
-<div class="row">
+		<style>
+		body {font-family: "Times New Roman", Georgia, Serif;}
+		h1, h2, h3, h4, h5, h6 {
+		  font-family: "Playfair Display";
+		  letter-spacing: 5px;
+		}
+		</style>
+		
+	</head>
 
-  <div class="column">
-    <div class="card">
-      <img src="img/avatar.png" alt="Mihai" width="200" height="200" class="center">
-        <h2>Mihai Niculescu</h2>
-        <p class="title">Backend</p>
-        <p><button class="button">Contact</button></p>
-    </div>
-  </div>
+	<body>
 
-  <div class="column">
-    <div class="card">
-      <img src="img/avatar.png" alt="Remus" width="200" height="200" class="center">
-        <h2>Remus Bompa</h2>
-        <p class="title">Backend</p>
-        <p><button class="button">Contact</button></p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="img/avatar.png" alt="Ion" width="200" height="200" class="center">
-        <h2>Ion Voiculescu</h2>
-        <p class="title">Frontend</p>
-        <p><button class="button">Contact</button></p>
-    </div>
-  </div>
-  
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+		  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+		    <img src="static/img/logo.png" alt="Timeplanner" width="40px" height="40px">
+			<a href="#home" class="w3-bar-item">TimePlanner</a>
+			<!-- Right-sided navbar links. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+			  <a href="#about" class="w3-bar-item w3-button">About</a>
+			  <div class="w3-dropdown-hover">
+				  <a class="w3-button">Milestones</button>
+				  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="#milestone1" class="w3-bar-item w3-button">Project Description</a>
+					<a href="#milestone2" class="w3-bar-item w3-button">Validation 1</a>
+				  </div>
+				</div>
+			  <a href="#team" class="w3-bar-item w3-button">Team</a>
+			</div>
+		  </div>
+		</div>
 
-</div>
+		<!-- Header -->
+		<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+		  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+		  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+			<h1 class="w3-xxlarge">Le Catering</h1>
+		  </div>
+		</header>
 
- </footer>
- </body>
+		<!-- Page content -->
+		<div class="w3-content" style="max-width:1100px">
+
+		  <!-- About Section -->
+		  <div class="w3-row w3-padding-64" id="about">
+			<div class="w3-col m6 w3-padding-large w3-hide-small">
+			 <img src="static/img/first.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+			</div>
+
+			<div class="w3-col m6 w3-padding-large">
+			  <h1 class="w3-center">TIMEPLANNER</h1><br>
+			  <h5 class="w3-center">MANAGING YOUR TIME THE RIGHT WAY</h5>
+			  <p class="w3-large">Wasting time in meetings is an important factor for most companies.In the last 20 years, the number of meetings has almost doubled, 67% of workers say spending too much time in meetings distracts them from doing their job. The cost of poorly organised meetings is $399 billion in the US in 2019 alone.</p>
+			</div>
+		  </div>
+		  
+		  <hr>
+		  
+		  <!-- Menu Section -->
+		  <div class="w3-row w3-padding-64" id="milestone1">
+
+				<div class="container-fluid">
+					<div class="row example-centered">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+							<ul class="timeline timeline-centered">
+								<li class="timeline-item period">
+									<div class="timeline-info"></div>
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h2 class="timeline-title">October 2020</h2>
+									</div>
+								</li>
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Project Description</h3>
+										<p>	TimePlanner is an application that manages meetings more efficiently.  
+											The application will be able to check if the respective meeting is needed and setting the level of need and if the persons involved are suitable for the meeting, using artificial intelligence based on the history of existing meetings. It will have a list of points to discuss for the respective meeting and the time allocated to each point, at the end there will be a feedback from the participants for the respective meeting which will be taken into account at the next meetings.</p>
+									</div>
+								</li>
+								
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Problem</h3>
+										<p>	Wasting time in meetings is an important factor for most companies.In the last 20 years, the number of meetings has almost doubled, 67% of workers say spending too much time in meetings distracts them from doing their job. The cost of poorly organised meetings is $399 billion in the US in 2019 alone. </p>
+									</div>
+								</li>
+								
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Solution </h3>
+										<p>	TimePlanner is an application that manages meetings more efficiently.
+										The application will be able to check if the respective meeting is needed and setting the level of need and if the persons involved are suitable for the meeting, using artificial intelligence based on the history of existing meetings. It will have a list of points to discuss for the respective meeting and the time allocated to each point, at the end there will be a feedback from the participants for the respective meeting which will be taken into account at the next meetings. </p>
+									</div>
+								</li>
+								
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Customer segment</h3>
+										<p>The application is addressed to teams that want to organize their meetings more efficiently. </p>
+									</div>
+								</li>
+								
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Competition</h3>
+										<p>Meetingbird, Calendar, Calendly, Doodle, Rallly, x.ai, Woven, Google Calendar</p>
+									</div>
+								</li>
+								
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Customer segment</h3>
+										<p>The application is addressed to teams that want to organize their meetings more efficiently. </p>
+									</div>
+								</li>
+								
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Advantage over the competition </h3>
+										<p>cross platform application</p>
+										<p>the possibility of providing feedback at the end of meetings</p>
+										<p>offering an easy to use and friendly interface</p>
+										<p>the use of artificial intelligence to analyze and improve the meeting</p>
+									</div>
+								</li>
+								
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Key metrics </h3>
+										<p>Number of new users, number of downloads for mobile users. </p>
+										<p>Number of active user - daily active users(DAU), weakly active users(WAU), monthly active users(MAU). </p>
+										<p>Rating from user, user feadback. </p>
+									</div>
+								</li>
+								
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Cost structure</h3>
+										<p>Production costs: </p>
+										<p>Developers, Testers, Designer, Software engineers, Internet subscription, Utilities, Rent, Taxes and dues </p>
+										<br>
+										<p>Unproductive costs: </p>
+										<p>Marketing and sales costs, Administrative costs </p>
+										<br>
+										<p>Non-periodic costs: </p>
+										<p>Hardware, Furniture, Software licenses </p>
+									</div>
+								</li>
+								
+								<li class="timeline-item">
+									<div class="timeline-marker"></div>
+									<div class="timeline-content">
+										<h3 class="timeline-title">Revenue streams</h3>
+										<p>Free – for 3 months of full versions, after this period the basic features and the existence of some ads.</p>
+										<p>Subscription fees - monthly fees, monthly recurring revenue (MRR), full versions and no-ads.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+			  <img src="static/img/second.jpg" class="w3-center w3-round w3-image w3-opacity-min" alt="Menu" width="100%" height="200">
+
+		  </div>
+
+		  <hr>
+
+		<!-- Milestone 2 -->
+
+			  <div class="w3-row-padding  w3-padding-64" id="milestone2">
+				  <div class="container">
+					  <div class="card border-0 shadow my-5">
+						<div class="card-body p-5">
+						  <h1 class="font-weight-light">How we reached our possible customer:</h1>
+							<br>
+						  	<p class="lead">Social networks</p>
+						  	<p class="lead">Interviews</p>
+						  	<p class="lead">Google search</p>
+							<div class="row text-center text-lg-left">
+
+								<div class="col-lg-3 col-md-4 col-6">
+								  <a href="#milestone2" class="d-block mb-4 h-100">
+										<img class="img-fluid img-thumbnail" src="static/img/m2_1.png" alt="">
+									  </a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-6">
+								  <a href="#milestone2" class="d-block mb-4 h-100">
+										<img class="img-fluid img-thumbnail" src="static/img/m2_2.png" alt="">
+									  </a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-6">
+								  <a href="#milestone2" class="d-block mb-4 h-100">
+										<img class="img-fluid img-thumbnail" src="static/img/m2_3.png" alt="">
+									  </a>
+								</div>
+								<div class="col-lg-3 col-md-4 col-6">
+								  <a href="#milestone2" class="d-block mb-4 h-100">
+										<img class="img-fluid img-thumbnail" src="static/img/m2_4.png" alt="">
+									  </a>
+								</div>
+							  </div>
+								  
+							<br>
+							<br>	
+							
+						  	<h2 class="lead">Sondaj</h2>
+								<ul class="list-group">
+								  <li class="list-group-item">Age</li>
+								  <li class="list-group-item">Relevant work experience?</li>
+								  <li class="list-group-item">The type of companies you last worked for?</li>
+								  <li class="list-group-item">Number of conferences / discussions with the team per week?</li>
+								  <li class="list-group-item">Average length of meetings with the team?</li>
+								  <li class="list-group-item">Does your schedule take into account your schedule in scheduling meetings, especially in the context of work from home?</li>
+								  <li class="list-group-item">Have you faced the situation where the meetings overlapped with each other or with other important activities?</li>
+								  <li class="list-group-item">Has your feedback improved subsequent meetings?</li>
+								  <li class="list-group-item">Describe the experience of a meeting in one word?</li>
+								  <li class="list-group-item">Has your feedback improved subsequent meetings?</li>
+								  <li class="list-group-item">What applications do you use for team communication and meetings and what do you think is the main problem with them?</li>
+								  <li class="list-group-item">What is / was the main difficulty at the current job or at the last job?</li>
+								</ul>
+							<br>
+							<br>						
+							
+						  	<h2 class="lead">Results</h2>
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="static/img/g1.jpg" style="width: 100%">
+								</div>
+								<div class="col-lg-4">
+									<p class="lead mb-0">Is your schedule taken into account in scheduling meetings, especially in the work from home context?</p>
+								</div>
+								<div class="col-lg-4">
+									<img src="static/img/g1_e.jpg" style="width: 100%">
+								</div>
+								
+								<p class="lead col-lg-12">From the results we understand that more then 25% have a problem with meeting overlapping.</p>
+							</div>
+
+							<br>
+							<br>
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="static/img/g2.jpg" style="width: 100%">
+								</div>
+								<div class="col-lg-4">
+									<p class="lead mb-0">Have you faced the situation in which the meetings overlapped with each other or with other important activities?</p>
+								</div>
+								<div class="col-lg-4">
+									<img src="static/img/g2_e.jpg" style="width: 100%">
+								</div>
+								
+								<p class="lead col-lg-12">From the results we understand that more then 25% have a problem with meeting overlapping.</p>
+							</div>
+							
+							<br>
+							<br>
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="static/img/g3.jpg" style="width: 100%">
+								</div>
+								<div class="col-lg-4">
+									<p class="lead mb-0">Has your feedback improved subsequent meetings?</p>
+								</div>
+								<div class="col-lg-4">
+									<img src="static/img/g3_e.jpg" style="width: 100%">
+								</div>
+								
+								<p class="lead col-lg-12">From the results we understand that more then 25% have a problem with meeting overlapping.</p>
+							</div>
+							
+							<br>
+							<br>
+							
+						  	<h2 class="lead">Free question</h2>
+							<div class="row">
+								<div class="col-lg-4">
+									<p class="lead mb-0">Has your feedback improved subsequent meetings?</p>
+								</div>
+								<div class="col-lg-8">
+									<img src="static/img/g5.jpg" style="width: 100%">
+								</div>
+							</div>						
+							<div class="row">
+								<div class="col-lg-4">
+									<p class="lead mb-0">Has your feedback improved subsequent meetings?</p>
+								</div>
+								<div class="col-lg-8">
+									<img src="static/img/g6.jpg" style="width: 100%">
+								</div>
+							</div>
+							
+						</div>
+					  </div>
+					</div>
+			  </div>
+			  
+		  <hr>
+		  
+		  <!-- Team -->
+			  <div class="w3-row-padding  w3-padding-64" id="team">
+				<div class="w3-center w3-padding-64">
+				  <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+				</div>
+
+				<div class="w3-third w3-margin-bottom">
+				  <div class="w3-card-4">
+					<div class="w3-container">
+					  <h3>Niculescu Mihai</h3>
+					  <p class="w3-opacity">Back-end developer</p>
+					  <p><a class="w3-button w3-light-grey w3-block" href="mailto:ion.voiculescu@stud.acs.upb.ro">Contact</a></p>
+					</div>
+				  </div>
+				</div>
+
+				<div class="w3-third w3-margin-bottom">
+				  <div class="w3-card-4">
+					<div class="w3-container">
+					  <h3>Remus Bompa</h3>
+					  <p class="w3-opacity">Back-end developer</p>
+					  <p><a class="w3-button w3-light-grey w3-block" href="mailto:ion.voiculescu@stud.acs.upb.ro">Contact</a></p>
+					</div>
+				  </div>
+				</div>
+
+				<div class="w3-third w3-margin-bottom">
+				  <div class="w3-card-4">
+					<div class="w3-container">
+					  <h3>Voiculescu Ion</h3>
+					  <p class="w3-opacity">Front-end developer</p>
+					  <p><a class="w3-button w3-light-grey w3-block" href="mailto:ion.voiculescu@stud.acs.upb.ro">Contact</a></p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+					  
+		<!-- End page content -->
+		</div>
+
+		<!-- Footer -->
+		<footer class="w3-center w3-light-grey w3-padding-32">
+		  <p>© Copyright TimePlanner 2020. All Rights Reserved</p>
+		</footer>
+
+	</body>
 </html>
