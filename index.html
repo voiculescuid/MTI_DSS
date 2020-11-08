@@ -10,11 +10,16 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="static/css/style.css">
-	<link rel="stylesheet" href="static/css/timeline.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="stylesheet" href="static/css/timeline.css">
+	<link rel="stylesheet" href="static/css/general.css">
+	<link rel="stylesheet" href="static/css/lightbox.css">
+
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,21 +27,8 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	<style>
-		body {
-			font-family: "Times New Roman", Georgia, Serif;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: "Playfair Display";
-			letter-spacing: 5px;
-		}
-	</style>
+	<!-- Javascript -->
+	<script src="static/js/lightbox.js"></script>
 
 </head>
 
@@ -46,7 +38,7 @@
 	<div class="w3-top">
 		<div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
 			<img src="static/img/logo.png" alt="Timeplanner" width="40px" height="40px">
-			<a href="#home" class="w3-bar-item">TimePlanner</a>
+			<a href="#" class="w3-bar-item">TimePlanner</a>
 			<!-- Right-sided navbar links. Hide them on small screens -->
 			<div class="w3-right w3-hide-small">
 				<a href="#about" class="w3-bar-item w3-button">About</a>
@@ -55,6 +47,7 @@
 						<div class="w3-dropdown-content w3-bar-block w3-card-4">
 							<a href="#milestone1" class="w3-bar-item w3-button">Project Description</a>
 							<a href="#milestone2" class="w3-bar-item w3-button">Validation 1</a>
+							<a href="#milestone3" class="w3-bar-item w3-button">Wireframes and landing page</a>
 						</div>
 				</div>
 				<a href="#team" class="w3-bar-item w3-button">Team</a>
@@ -84,7 +77,7 @@
 
 		<hr>
 
-		<!-- Menu Section -->
+		<!-- Milestone 1 -->
 		<div class="w3-row w3-padding-64" id="milestone1">
 
 			<div class="container-fluid">
@@ -226,7 +219,6 @@
 		<hr>
 
 		<!-- Milestone 2 -->
-
 		<div class="w3-row-padding  w3-padding-64" id="milestone2">
 			<div class="container">
 				<div class="card border-0 shadow my-5">
@@ -298,8 +290,8 @@
 								<img src="static/img/g1_e.JPG" style="width: 100%">
 							</div>
 
-							<p class="lead col-lg-12">From the results we understand that more than 25% 
-									have a problem with meeting overlapping.</p>
+							<p class="lead col-lg-12">From the results we understand that more than 25%
+								have a problem with meeting overlapping.</p>
 						</div>
 
 						<br>
@@ -316,9 +308,10 @@
 								<img src="static/img/g2_e.JPG" style="width: 100%">
 							</div>
 
-							<p class="lead col-lg-12">One problem showed from the response on the left and right question,
-									is the inefficiencies of the current meeting organisation and poor 
-									planification coordination.</p>
+							<p class="lead col-lg-12">One problem showed from the response on the left and right
+								question,
+								is the inefficiencies of the current meeting organisation and poor
+								planification coordination.</p>
 						</div>
 
 						<br>
@@ -334,9 +327,9 @@
 								<img src="static/img/g3_e.JPG" style="width: 100%">
 							</div>
 
-							<p class="lead col-lg-12">One of the most important action of improving 
-									one service is taking the feedback from the users, we should automate the 
-									planning machines for more feedback processing and meeting planning.</p>
+							<p class="lead col-lg-12">One of the most important action of improving
+								one service is taking the feedback from the users, we should automate the
+								planning machines for more feedback processing and meeting planning.</p>
 						</div>
 
 						<br>
@@ -363,6 +356,373 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<hr>
+
+		<!-- Milestone 3 -->
+		<div class="w3-row-padding  w3-padding-64" id="milestone3">
+
+			<h1 class="w3-center">Wireframes</h1><br>
+
+			<!-- Images used to open the lightbox -->
+			<div class="row">
+				<div class="column">
+					<img src="static/img/wireframe1.png" onclick="openModal();currentSlide(1)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/wireframe2.png" onclick="openModal();currentSlide(2)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/wireframe3.png" onclick="openModal();currentSlide(3)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/wireframe4.png" onclick="openModal();currentSlide(4)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/wireframe5.png" onclick="openModal();currentSlide(5)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/wireframe6.png" onclick="openModal();currentSlide(6)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/wireframe7.png" onclick="openModal();currentSlide(7)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/wireframe8.png" onclick="openModal();currentSlide(8)" class="hover-shadow"
+						width="200px">
+				</div>
+			</div>
+
+		</div>
+		<hr>
+
+		<div class="w3-row-padding  w3-padding-64">
+			<h1 class="w3-center">Mock-ups</h1><br>
+
+			<div class="row">
+				<div class="column">
+					<img src="static/img/mock1.png" onclick="openModal();currentSlide(9)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock2.png" onclick="openModal();currentSlide(10)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock3.png" onclick="openModal();currentSlide(11)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock4.png" onclick="openModal();currentSlide(12)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock5.png" onclick="openModal();currentSlide(13)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock6.png" onclick="openModal();currentSlide(14)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock7.png" onclick="openModal();currentSlide(15)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock8.png" onclick="openModal();currentSlide(16)" class="hover-shadow"
+						width="200px">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					<img src="static/img/mock9.png" onclick="openModal();currentSlide(17)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock10.png" onclick="openModal();currentSlide(18)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock11.png" onclick="openModal();currentSlide(19)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock12.png" onclick="openModal();currentSlide(20)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock13.png" onclick="openModal();currentSlide(21)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock14.png" onclick="openModal();currentSlide(22)" class="hover-shadow"
+						width="200px">
+				</div>
+				<div class="column">
+					<img src="static/img/mock15.png" onclick="openModal();currentSlide(23)" class="hover-shadow"
+						width="200px">
+				</div>
+			</div>
+		</div>
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 23</div>
+					<img src="static/img/wireframe1.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 23</div>
+					<img src="static/img/wireframe2.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 23</div>
+					<img src="static/img/wireframe3.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 23</div>
+					<img src="static/img/wireframe4.png" style="width:300px">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">5 / 23</div>
+					<img src="static/img/wireframe5.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 23</div>
+					<img src="static/img/wireframe6.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 23</div>
+					<img src="static/img/wireframe7.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 23</div>
+					<img src="static/img/wireframe8.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">9 / 23</div>
+					<img src="static/img/mock1.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">10 / 23</div>
+					<img src="static/img/mock2.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">11 / 23</div>
+					<img src="static/img/mock3.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">12 / 23</div>
+					<img src="static/img/mock4.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">13 / 23</div>
+					<img src="static/img/mock5.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">14 / 23</div>
+					<img src="static/img/mock6.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">15 / 23</div>
+					<img src="static/img/mock7.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">16 / 23</div>
+					<img src="static/img/mock8.png" style="width:300px">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">17 / 23</div>
+					<img src="static/img/mock9.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">18 / 23</div>
+					<img src="static/img/mock10.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">19 / 23</div>
+					<img src="static/img/mock11.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">20 / 23</div>
+					<img src="static/img/mock12.png" style="width:300px">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">21 / 23</div>
+					<img src="static/img/mock13.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">22 / 23</div>
+					<img src="static/img/mock14.png" style="width:300px">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">23 / 23</div>
+					<img src="static/img/mock15.png" style="width:300px">
+				</div>
+
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail image controls -->
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/wireframe1.png" onclick="currentSlide(1)" alt="Login display"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/wireframe2.png" onclick="currentSlide(2)" alt="Credential request"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/wireframe3.png" onclick="currentSlide(3)" alt="Meeting profile"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/wireframe4.png" onclick="currentSlide(4)" alt="Meeting creation"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/wireframe5.png" onclick="currentSlide(5)" alt="Planer viewport"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/wireframe6.png" onclick="currentSlide(6)" alt="User details"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/wireframe7.png" onclick="currentSlide(7)" alt="Day plan"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/wireframe8.png" onclick="currentSlide(8)" alt="Current activity"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock1.png" onclick="currentSlide(9)" alt="Mockup 1"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock2.png" onclick="currentSlide(10)" alt="Mockup 2"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock3.png" onclick="currentSlide(11)" alt="Mockup 3"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock4.png" onclick="currentSlide(12)" alt="Mockup 4"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock5.png" onclick="currentSlide(13)" alt="Mockup 5"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock6.png" onclick="currentSlide(14)" alt="Mockup 6"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock7.png" onclick="currentSlide(15)" alt="Mockup 7"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock8.png" onclick="currentSlide(16)" alt="Mockup 8"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock9.png" onclick="currentSlide(17)" alt="Mockup 9"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock10.png" onclick="currentSlide(18)" alt="Mockup 10"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock11.png" onclick="currentSlide(19)" alt="Mockup 11"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock12.png" onclick="currentSlide(20)" alt="Mockup 12"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock13.png" onclick="currentSlide(21)" alt="Mockup 13"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock14.png" onclick="currentSlide(22)" alt="Mockup 14"
+						style="width:50px">
+				</div>
+
+				<div class="column_thumbnail">
+					<img class="demo" src="static/img/mock15.png" onclick="currentSlide(23)" alt="Mockup 15"
+						style="width:50px">
+				</div>
+
+			</div>
+		</div>
+
+		<hr>
+		
+		<div class="w3-row-padding  w3-padding-64">
+			<h1>Our landing page can be found  <a href="https://voiculescuid.github.io/landingpage.html">here</a>!</h1>
 		</div>
 
 		<hr>
