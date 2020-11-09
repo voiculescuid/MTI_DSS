@@ -28,6 +28,19 @@
 
 <body>
 
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <img src="static/img/logo.png" alt="Timeplanner" width="40px" height="40px">
+    <a href="#" class="w3-bar-item">TimePlanner</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      
+      <a href="#team" class="w3-bar-item w3-button">Team</a>
+    </div>
+  </div>
+</div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
@@ -38,9 +51,41 @@
             <h1>TimePlanner</h1>
             <h1>TimePlanner</h1>
         </div>
-            <p>COMING SOON<span>:)</span></p>
     </header>
+
+    <!-- About Section -->
+		<div class="w3-center"></div>
+			<h1 class="w3-center">Save your time!</h1><br>
+			<h2 class="w3-center">MANAGING YOUR TIME THE RIGHT NOW <br> Find More, Subscribe now!</h2>
+    </div>
     
+
+    <!-- Form Started -->
+    
+      <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+              <div class="panel panel-danger">
+                  <div class="panel-body">
+                      <form id="reused_form">
+                          <div class="form-group">
+                              <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                              <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                          </div>
+                          <div class="form-group">
+                              <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                              <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                          </div>
+                          <div class="form-group">
+                              <button class="btn btn-raised btn-block btn-danger">Send &rarr;</button>
+                          </div>
+                      </form>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  <!-- Form Ended -->
+
     <!-- Photo Grid -->
     <div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
       <div class="w3-half">
@@ -56,6 +101,45 @@
     <!-- End Page Content -->
     </div>
     
+    <!-- Team -->
+		<div class="w3-row-padding  w3-padding-64" id="team">
+			<div class="w3-center w3-padding-64">
+				<span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+			</div>
+
+			<div class="w3-third w3-margin-bottom">
+				<div class="w3-card-4">
+					<div class="w3-container">
+						<h3>Niculescu Mihai</h3>
+						<p class="w3-opacity">Back-end developer</p>
+						<p><a class="w3-button w3-light-grey w3-block"
+								href="mailto:ion.voiculescu@stud.acs.upb.ro">Contact</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-third w3-margin-bottom">
+				<div class="w3-card-4">
+					<div class="w3-container">
+						<h3>Remus Bompa</h3>
+						<p class="w3-opacity">Back-end developer</p>
+						<p><a class="w3-button w3-light-grey w3-block"
+								href="mailto:ion.voiculescu@stud.acs.upb.ro">Contact</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-third w3-margin-bottom">
+				<div class="w3-card-4">
+					<div class="w3-container">
+						<h3>Voiculescu Ion</h3>
+						<p class="w3-opacity">Front-end developer</p>
+						<p><a class="w3-button w3-light-grey w3-block"
+								href="mailto:ion.voiculescu@stud.acs.upb.ro">Contact</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -65,6 +149,7 @@
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>
     </footer>
+
     
 </body>
 
