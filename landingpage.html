@@ -1,156 +1,129 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-    <title>TimePlanner - Landing Page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TimePlanner - Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="static/img/logo.png">
+  <link rel="icon" href="static/img/logo.png">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/landing.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/landing.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Javascript -->
-    <script src="static/js/landing.js"></script>
+  <!-- Javascript -->
+  <script src="static/js/landing.js"></script>
 
 </head>
 
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <img src="static/img/logo.png" alt="Timeplanner" width="40px" height="40px">
-    <a href="#" class="w3-bar-item">TimePlanner</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      
-      <a href="#team" class="w3-bar-item w3-button">Team</a>
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">TimePlanner</h1>
+      <ul class="nav">
+        <li><a href="https://voiculescuid.github.io/">Fiki</a></li>
+        <li><a href="https://voiculescuid.github.io/#team">Team</a></li>
+      </ul>
     </div>
-  </div>
-</div>
+  </nav>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
-    <!-- Header -->
-    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-        <div class="text-box">
-            <h1>TimePlanner</h1>
-            <h1>TimePlanner</h1>
-        </div>
-    </header>
-
-    <!-- About Section -->
-		<div class="w3-center"></div>
-			<h1 class="w3-center">Save your time!</h1><br>
-			<h2 class="w3-center">MANAGING YOUR TIME THE RIGHT NOW <br> Find More, Subscribe now!</h2>
+  <!-- Showcase -->
+  <section class="section-a">
+    <div class="container">
+      <div>
+        <h1>TimePlanner</h1>
+        <h2>MANAGING YOUR TIME THE RIGHT WAY</h2>
+        <p>
+          Wasting time in meetings is an important factor for most companies.In the last 20 years, the number of
+          meetings has almost doubled, 67% of workers say spending too much time in meetings distracts them from doing
+          their job. The cost of poorly organised meetings is $399 billion in the US in 2019 alone.
+        </p>
+        <a href="https://voiculescuid.github.io/" class="btn"> Read more</a>
+      </div>
+      <img src="static/img/logo_8x.png" alt="" />
     </div>
-    
+  </section>
 
-    <!-- Form Started -->
-    
-      <div class="row">
-          <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-              <div class="panel panel-danger">
-                  <div class="panel-body">
-                      <form id="reused_form">
-                          <div class="form-group">
-                              <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
-                              <input type="text" name="name" class="form-control" placeholder="Enter Name">
-                          </div>
-                          <div class="form-group">
-                              <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-                              <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                          </div>
-                          <div class="form-group">
-                              <button class="btn btn-raised btn-block btn-danger">Send &rarr;</button>
-                          </div>
-                      </form>
-                      
-                  </div>
-              </div>
+  <!-- Large Text -->
+  <section id="about" class="section-b">
+    <div class="overlay">
+      <div class="section-b-inner py-5">
+        <h3 class="text-2">Easy & Good</h3>
+        <p class="mt-1">
+          TimePlanner is an application that manages meetings more efficiently. The application will be able to check if
+          the respective meeting is needed and setting the level of need and if the persons involved are suitable for
+          the meeting, using artificial intelligence based on the history of existing meetings.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section-c">
+    <div class="gallery">
+      <a href="#" class="big"><img src="static/img/app_4x.png" alt="" /></a>
+      <a href="#" class="big"><img src="static/img/meeting2.jpg" alt="" /></a>
+      <a href="#" class="big"><img src="static/img/calendar.jpg" alt="" /></a>
+      <a href="#" class="big"><img src="static/img/second.jpg" alt="" /></a>
+      <a href="#" class="big"><img src="static/img/first.jpg" alt="" /></a>
+      <a href="#" class="big"><img src="static/img/calendar2.jpg" alt="" /></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section-footer py-4 bg-primary">
+    <div class="container">
+      <div>
+        <h2 class="text-2 mb-1">We are on:</h2>
+        <a href="http://twitter.com">
+          <i class="fa fa-twitter fa-2x"></i>
+        </a>
+        <a href="http://facebook.com">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+        <a href="http://youtube.com">
+          <i class="fa fa-youtube fa-2x"></i>
+        </a>
+      </div>
+      <div>
+        <h3>Company Info</h3>
+        <ul>
+          <li><a href="#">All Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Blog Posts</h3>
+        <ul>
+          <li><a href="https://voiculescuid.github.io/#milestone1">Project Description</a></li>
+          <li><a href="https://voiculescuid.github.io/#milestone2">Validation 1</a></li>
+          <li><a href="https://voiculescuid.github.io/#milestone3">Wireframes and landing page</a></li>
+          <li><a href="https://voiculescuid.github.io/#milestone4">User Experience</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Subscribe</h3>
+        <p>
+          For more information subscribe to our newsletter:
+        </p>
+        <form class="mt-1" name="email-form" method="POST" data-netlify="true">
+          <div class="email-form">
+            <span class="form-control-wrap"><input type="email" name="email" id="email" size="40" class="form-control"
+                placeholder="E-mail" /></span><button type="submit" value="Submit" class="form-control submit">
+              <i class="fa fa-chevron-right"></i>
+            </button>
           </div>
-      </div>
-  <!-- Form Ended -->
-
-    <!-- Photo Grid -->
-    <div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
-      <div class="w3-half">
-        <img src="static/img/meeting.jpg" style="width:100%">
-        <img src="static/img/meeting2.jpg" style="width:100%">
-      </div>
-    
-      <div class="w3-half">
-        <img src="static/img/first.jpg" style="width:100%">
+        </form>
       </div>
     </div>
-      
-    <!-- End Page Content -->
-    </div>
-    
-    <!-- Team -->
-		<div class="w3-row-padding  w3-padding-64" id="team">
-			<div class="w3-center w3-padding-64">
-				<span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
-			</div>
-
-			<div class="w3-third w3-margin-bottom">
-				<div class="w3-card-4">
-					<div class="w3-container">
-						<h3>Niculescu Mihai</h3>
-						<p class="w3-opacity">Back-end developer</p>
-						<p><a class="w3-button w3-light-grey w3-block"
-								href="mailto:ion.voiculescu@stud.acs.upb.ro">Contact</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="w3-third w3-margin-bottom">
-				<div class="w3-card-4">
-					<div class="w3-container">
-						<h3>Remus Bompa</h3>
-						<p class="w3-opacity">Back-end developer</p>
-						<p><a class="w3-button w3-light-grey w3-block"
-								href="mailto:ion.voiculescu@stud.acs.upb.ro">Contact</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="w3-third w3-margin-bottom">
-				<div class="w3-card-4">
-					<div class="w3-container">
-						<h3>Voiculescu Ion</h3>
-						<p class="w3-opacity">Front-end developer</p>
-						<p><a class="w3-button w3-light-grey w3-block"
-								href="mailto:ion.voiculescu@stud.acs.upb.ro">Contact</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </footer>
-
-    
+  </footer>
 </body>
-
-</html>
