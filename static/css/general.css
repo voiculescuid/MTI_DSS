@@ -7,3 +7,15 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 5px;
 }
 
+h3.none-spacing{
+    letter-spacing: 0px;
+}
+
+
+h5.none-spacing{
+    letter-spacing: 0px;
+}
+
+ul.none-bullets {
+    list-style-type: none;
+}
