@@ -19,3 +19,12 @@ h5.none-spacing{
 ul.none-bullets {
     list-style-type: none;
 }
+
+.se_mvp_element {
+    padding: 10px 10px 20px 10px;
+    margin: 15px 15px;
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
